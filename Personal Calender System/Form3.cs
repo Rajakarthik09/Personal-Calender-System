@@ -44,6 +44,10 @@ namespace Personal_Calender_System
                 f7.FormClosed += (s, args) => this.Close();
                 f7.Show();
             }
+            else
+            {
+                MessageBox.Show("This option is Available only to managers");
+            }
         }
 
         private void button3_Click(object sender, EventArgs e)

@@ -89,7 +89,7 @@ namespace Personal_Calender_System
             // Display the available time slots in a message box
             string availableSlotsMessage = string.Join("\n ", availableSlots);
             this.Hide();
-            var f8 = new Form8(availableSlotsMessage);
+            var f8 = new Form8(availableSlotsMessage, txtDuration.Text, txtTitle.Text,datePicker.Value.Date, textBox1.Text, txtDescription.Text);
             f8.FormClosed += (s, args) => this.Close();
             f8.Show();
         }
